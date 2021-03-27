@@ -21,6 +21,8 @@ namespace Project_1
     /// </summary>
     public partial class MainWindow : Window
     {
+        string login;
+        string password;
         public MainWindow()
         {
             InitializeComponent();
@@ -28,20 +30,21 @@ namespace Project_1
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            string login = textBox1.Text;
+            login = textBox1.Text;
         }
 
         private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
         {
-            string password = textBox2.Text;
+           password = textBox2.Password;
         }
 
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Вы успешно зарегистрированы");
+            MessageBox.Show("Вы успешно зарегистрированы, " + login + "!");
 
             Window1 win = new Window1();
             win.Show();
+            this.Hide();
         }
     }
 }
