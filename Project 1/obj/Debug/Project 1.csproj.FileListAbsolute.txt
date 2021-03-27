@@ -1,0 +1,27 @@
+C:\Гришин Роман\WPF\Project 1\Project 1\bin\Debug\Project 1.exe.config
+C:\Гришин Роман\WPF\Project 1\Project 1\bin\Debug\Project 1.exe
+C:\Гришин Роман\WPF\Project 1\Project 1\bin\Debug\Project 1.pdb
+C:\Гришин Роман\WPF\Project 1\Project 1\obj\Debug\Project 1.csprojAssemblyReference.cache
+C:\Гришин Роман\WPF\Project 1\Project 1\obj\Debug\MainWindow.g.cs
+C:\Гришин Роман\WPF\Project 1\Project 1\obj\Debug\App.g.cs
+C:\Гришин Роман\WPF\Project 1\Project 1\obj\Debug\Project 1_MarkupCompile.cache
+C:\Гришин Роман\WPF\Project 1\Project 1\obj\Debug\Project 1_MarkupCompile.lref
+C:\Гришин Роман\WPF\Project 1\Project 1\obj\Debug\MainWindow.baml
+C:\Гришин Роман\WPF\Project 1\Project 1\obj\Debug\Project 1.g.resources
+C:\Гришин Роман\WPF\Project 1\Project 1\obj\Debug\Project_1.Properties.Resources.resources
+C:\Гришин Роман\WPF\Project 1\Project 1\obj\Debug\Project 1.csproj.GenerateResource.cache
+C:\Гришин Роман\WPF\Project 1\Project 1\obj\Debug\Project 1.csproj.CoreCompileInputs.cache
+C:\Гришин Роман\WPF\Project 1\Project 1\obj\Debug\Project 1.exe
+C:\Гришин Роман\WPF\Project 1\Project 1\obj\Debug\Project 1.pdb
+C:\Гришин Роман\WPF\Project 1\Project 1\obj\Debug\Window1.g.cs
+C:\Гришин Роман\WPF\Project 1\Project 1\obj\Debug\Window1.baml
+C:\Гришин Роман\WPF\Project 1\Project 1\bin\Debug\mydb.db
+C:\Гришин Роман\WPF\Project 1\Project 1\bin\Debug\EntityFramework.dll
+C:\Гришин Роман\WPF\Project 1\Project 1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Гришин Роман\WPF\Project 1\Project 1\bin\Debug\System.Data.SQLite.dll
+C:\Гришин Роман\WPF\Project 1\Project 1\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Гришин Роман\WPF\Project 1\Project 1\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Гришин Роман\WPF\Project 1\Project 1\bin\Debug\EntityFramework.xml
+C:\Гришин Роман\WPF\Project 1\Project 1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Гришин Роман\WPF\Project 1\Project 1\bin\Debug\System.Data.SQLite.xml
+C:\Гришин Роман\WPF\Project 1\Project 1\obj\Debug\Project 1.csproj.CopyComplete
