@@ -23,6 +23,9 @@ namespace Project_1
     {
         string login;
         string password;
+
+        SQLiteConnection connect;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -30,21 +33,35 @@ namespace Project_1
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            login = textBox1.Text;
+            login = loginBox.Text;
+
+            connect = new SQLiteConnection("Data Source=mydb.db; Version=3;");
         }
 
-        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
+        private void PassBox_PasswordChanged(object sender, RoutedEventArgs e)
         {
-           password = textBox2.Password;
+            password = passBox.Password;
         }
 
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Вы успешно зарегистрированы, " + login + "!");
+            if (loginBox.Text != "" && passBox.Password != "")
+            {
+                connect.Open();
+                string cmdStr = "INSERT INTO user (login, password) VALUES ('" + login + "', '" + password +  "');"; // INSERT INTO user (login, password) VALUES ('Roma', '1111');
+                SQLiteCommand cmd = new SQLiteCommand(cmdStr, connect);
+                cmd.ExecuteNonQuery();
 
-            Window1 win = new Window1();
-            win.Show();
-            this.Hide();
+                MessageBox.Show("Вы успешно зарегистрированы, " + login + "!");
+
+                Window1 win = new Window1();
+                win.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Поля должны быть заполнены!");
+            }
         }
     }
 }

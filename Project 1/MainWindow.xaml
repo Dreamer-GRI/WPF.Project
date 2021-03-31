@@ -8,15 +8,17 @@
         Title="MainWindow" Height="480" Width="720" Cursor="None">
     <Grid Background="#FFC6D7E8">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="319*"/>
+            <ColumnDefinition Width="246*"/>
+            <ColumnDefinition Width="73*"/>
             <ColumnDefinition Width="34*"/>
             <ColumnDefinition Width="359*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="35" Margin="215,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" FontSize="18" Grid.ColumnSpan="3" TextChanged="TextBox_TextChanged" FontFamily="Impact"/>
-        <PasswordBox x:Name="textBox2" HorizontalAlignment="Left" Height="35" Margin="215,233,0,0" VerticalAlignment="Top" Width="245" FontSize="18" Grid.ColumnSpan="3" FontFamily="Impact"/>
-        <Label x:Name="label1" Content="Введите ваш логин" HorizontalAlignment="Left" Margin="237,68,0,0" VerticalAlignment="Top" RenderTransformOrigin="-9.168,2.685" FontSize="22" FontFamily="Impact" Grid.ColumnSpan="3"/>
-        <Label x:Name="label2" Content="Введите ваш пароль" HorizontalAlignment="Left" Margin="237,191,0,0" VerticalAlignment="Top" RenderTransformOrigin="-9.168,2.685" FontSize="22" FontFamily="Impact" Grid.ColumnSpan="3"/>
-        <Button x:Name="button1" Content="Зарегистрироваться" HorizontalAlignment="Left" Margin="231,314,0,0" VerticalAlignment="Top" Width="210" Height="45" FontSize="20" FontFamily="Impact" Background="#FF44A1D6" Grid.ColumnSpan="3" Cursor="Hand" Click="Button1_Click"/>
+        <TextBox x:Name="loginBox" HorizontalAlignment="Left" Height="35" Margin="215,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" FontSize="18" Grid.ColumnSpan="4" TextChanged="TextBox_TextChanged" FontFamily="Impact"/>
+        <PasswordBox x:Name="passBox" HorizontalAlignment="Left" Height="35" Margin="215,233,0,0" VerticalAlignment="Top" Width="245" FontSize="18" Grid.ColumnSpan="4" FontFamily="Impact" PasswordChanged="PassBox_PasswordChanged"/>
+        <Label x:Name="label1" Content="Введите ваш логин" HorizontalAlignment="Left" Margin="237,68,0,0" VerticalAlignment="Top" RenderTransformOrigin="-9.168,2.685" FontSize="22" FontFamily="Impact" Grid.ColumnSpan="4"/>
+        <Label x:Name="label2" Content="Введите ваш пароль" HorizontalAlignment="Left" Margin="237,191,0,0" VerticalAlignment="Top" RenderTransformOrigin="-9.168,2.685" FontSize="22" FontFamily="Impact" Grid.ColumnSpan="4"/>
+        <Button x:Name="button1" Content="Зарегистрироваться" HorizontalAlignment="Left" Margin="231,314,0,0" VerticalAlignment="Top" Width="210" Height="45" FontSize="20" FontFamily="Impact" Background="#FF44A1D6" Grid.ColumnSpan="4" Cursor="Hand" Click="Button1_Click"/>
+        <Label x:Name="text" Content="Label" Grid.Column="3" HorizontalAlignment="Left" Margin="195,242,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.504,-1.22"/>
 
     </Grid>
 </Window>
