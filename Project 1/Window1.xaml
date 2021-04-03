@@ -13,8 +13,8 @@
             <ColumnDefinition Width="34*"/>
             <ColumnDefinition Width="359*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="35" Margin="195,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" FontSize="18" Grid.ColumnSpan="3" TextChanged="TextBox_TextChanged" FontFamily="Impact" Grid.Column="1"/>
-        <PasswordBox x:Name="textBox4" HorizontalAlignment="Left" Height="35" Margin="195,233,0,0" VerticalAlignment="Top" Width="245" FontSize="18" Grid.ColumnSpan="3" FontFamily="Impact" Grid.Column="1"/>
+        <TextBox x:Name="loginBox2" HorizontalAlignment="Left" Height="35" Margin="195,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" FontSize="18" Grid.ColumnSpan="3" TextChanged="TextBox_TextChanged" FontFamily="Impact" Grid.Column="1"/>
+        <PasswordBox x:Name="passBox2" HorizontalAlignment="Left" Height="35" Margin="195,233,0,0" VerticalAlignment="Top" Width="245" FontSize="18" Grid.ColumnSpan="3" FontFamily="Impact" Grid.Column="1" PasswordChanged="PassBox2_PasswordChanged"/>
         <Label x:Name="label3" Content="Введите ваш логин" HorizontalAlignment="Left" Margin="217,68,0,0" VerticalAlignment="Top" RenderTransformOrigin="-9.168,2.685" FontSize="22" FontFamily="Impact" Grid.ColumnSpan="3" Grid.Column="1"/>
         <Label x:Name="label4" Content="Введите ваш пароль" HorizontalAlignment="Left" Margin="217,191,0,0" VerticalAlignment="Top" RenderTransformOrigin="-9.168,2.685" FontSize="22" FontFamily="Impact" Grid.ColumnSpan="3" Grid.Column="1"/>
         <Button x:Name="button2" Content="Войти" HorizontalAlignment="Left" Margin="211,314,0,0" VerticalAlignment="Top" Width="210" Height="45" FontSize="24" FontFamily="Impact" Background="#FF44A1D6" Grid.ColumnSpan="3" Cursor="Hand" Click="Button1_Click" Grid.Column="1"/>

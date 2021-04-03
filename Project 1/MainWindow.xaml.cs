@@ -45,22 +45,29 @@ namespace Project_1
 
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
-            if (loginBox.Text != "" && passBox.Password != "")
+            try
             {
-                connect.Open();
-                string cmdStr = "INSERT INTO user (login, password) VALUES ('" + login + "', '" + password +  "');"; // INSERT INTO user (login, password) VALUES ('Roma', '1111');
-                SQLiteCommand cmd = new SQLiteCommand(cmdStr, connect);
-                cmd.ExecuteNonQuery();
+                if (loginBox.Text != "" && passBox.Password != "")
+                {
+                    connect.Open();
+                    string cmdStr = "INSERT INTO user (login, password) VALUES ('" + login + "', '" + password + "');"; // INSERT INTO user (login, password) VALUES ('Roma', '1111');
+                    SQLiteCommand cmd = new SQLiteCommand(cmdStr, connect);
+                    cmd.ExecuteNonQuery();
 
-                MessageBox.Show("Вы успешно зарегистрированы, " + login + "!");
+                    MessageBox.Show("Вы успешно зарегистрированы, " + login + "!  :D");
 
-                Window1 win = new Window1();
-                win.Show();
-                this.Hide();
+                    Window1 win = new Window1(connect);
+                    win.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Поля должны быть заполнены!");
+                }
             }
-            else
+            catch
             {
-                MessageBox.Show("Поля должны быть заполнены!");
+                MessageBox.Show("Имя пользователя уже занято :( ");
             }
         }
     }
