@@ -70,5 +70,12 @@ namespace Project_1
                 MessageBox.Show("Имя пользователя уже занято :( ");
             }
         }
+
+        private void Button2_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 win = new Window1(connect);
+            win.Show();
+            this.Hide();
+        }
     }
 }

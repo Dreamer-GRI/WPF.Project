@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Project_1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="480" Width="720" Cursor="None">
-    <Grid Background="#FFC6D7E8">
+        Title="Регистрация" Height="480" Width="720" Cursor="None">
+    <Grid x:Name="Window" Background="#FFC6D7E8">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="246*"/>
             <ColumnDefinition Width="73*"/>
@@ -18,6 +18,7 @@
         <Label x:Name="label1" Content="Введите ваш логин" HorizontalAlignment="Left" Margin="237,68,0,0" VerticalAlignment="Top" RenderTransformOrigin="-9.168,2.685" FontSize="22" FontFamily="Impact" Grid.ColumnSpan="4"/>
         <Label x:Name="label2" Content="Введите ваш пароль" HorizontalAlignment="Left" Margin="237,191,0,0" VerticalAlignment="Top" RenderTransformOrigin="-9.168,2.685" FontSize="22" FontFamily="Impact" Grid.ColumnSpan="4"/>
         <Button x:Name="button1" Content="Зарегистрироваться" HorizontalAlignment="Left" Margin="231,314,0,0" VerticalAlignment="Top" Width="210" Height="45" FontSize="20" FontFamily="Impact" Background="#FF44A1D6" Grid.ColumnSpan="4" Cursor="Hand" Click="Button1_Click"/>
+        <Button x:Name="button2" Content="Я уже зарегистрирован" HorizontalAlignment="Left" Margin="231,375,0,0" VerticalAlignment="Top" Width="210" Height="45" FontSize="20" FontFamily="Impact" Background="#FF67BB5A" Grid.ColumnSpan="4" Cursor="Hand" Click="Button2_Click"/>
 
     </Grid>
 </Window>
