@@ -81,6 +81,7 @@ namespace Project_1
                             MessageBox.Show("Вы ввели неверный пароль!");
                         }
                     }
+                    reader.Close();
                 }
                 else
                 {

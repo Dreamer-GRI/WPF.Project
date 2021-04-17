@@ -29,13 +29,14 @@ namespace Project_1
         public MainWindow()
         {
             InitializeComponent();
+
+            connect = new SQLiteConnection("Data Source=mydb.db; Version=3;");
+            connect.Open();
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             login = loginBox.Text;
-
-            connect = new SQLiteConnection("Data Source=mydb.db; Version=3;");
         }
 
         private void PassBox_PasswordChanged(object sender, RoutedEventArgs e)
@@ -49,8 +50,7 @@ namespace Project_1
             {
                 if (loginBox.Text != "" && passBox.Password != "")
                 {
-                    connect.Open();
-                    string cmdStr = "INSERT INTO user (login, password) VALUES ('" + login + "', '" + password + "');"; // INSERT INTO user (login, password) VALUES ('Roma', '1111');
+                    string cmdStr = "INSERT INTO user (login, password, user_type) VALUES ('" + login + "', '" + password + "', '" + 2 + "');"; // INSERT INTO user (login, password) VALUES ('Roma', '1111');
                     SQLiteCommand cmd = new SQLiteCommand(cmdStr, connect);
                     cmd.ExecuteNonQuery();
 

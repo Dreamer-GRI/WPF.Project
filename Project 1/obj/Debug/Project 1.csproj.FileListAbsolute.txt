@@ -52,3 +52,5 @@ C:\Users\WSR\repo1\WPF.Project\Project 1\obj\Debug\Project 1.csproj.CoreCompileI
 C:\Users\WSR\repo1\WPF.Project\Project 1\obj\Debug\Project 1.csproj.CopyComplete
 C:\Users\WSR\repo1\WPF.Project\Project 1\obj\Debug\Project 1.exe
 C:\Users\WSR\repo1\WPF.Project\Project 1\obj\Debug\Project 1.pdb
+C:\Users\WSR\repo1\WPF.Project\Project 1\obj\Debug\Window2.g.cs
+C:\Users\WSR\repo1\WPF.Project\Project 1\obj\Debug\Window2.baml
