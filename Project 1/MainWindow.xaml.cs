@@ -55,7 +55,6 @@ namespace Project_1
                     cmd.ExecuteNonQuery();
 
                     MessageBox.Show("Вы успешно зарегистрированы, " + login + "!  :D");
-
                     Window1 win = new Window1(connect);
                     win.Show();
                     this.Hide();
